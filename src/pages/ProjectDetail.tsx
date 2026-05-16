@@ -27,14 +27,14 @@ export function ProjectDetail() {
 
   return (
     <Dialog open={true} onOpenChange={handleClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto p-0">
+      <DialogContent className="w-[95vw] max-w-4xl max-h-[90vh] overflow-y-auto p-0 border-none sm:border-solid">
         <div className="sticky top-0 bg-white z-10 px-6 py-4 border-b border-zinc-100">
           <DialogHeader>
             <DialogTitle className="text-2xl font-bold text-sky-950">{project.title}</DialogTitle>
           </DialogHeader>
         </div>
 
-        <div className="p-8 space-y-12">
+        <div className="p-4 md:p-8 space-y-12">
           {/* Header Section */}
           <div className="text-center space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">

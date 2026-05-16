@@ -9,13 +9,13 @@ function AppFooter() {
     return (
         <footer id="contact" className="w-full pt-28 flex flex-col justify-start items-center">
             <div className="w-full py-12 bg-zinc-100 border-t border-neutral-300 flex justify-center items-center">
-                <div className="w-full max-w-[1200px] px-8 flex justify-between items-center">
-                    <div className="inline-flex flex-col justify-start items-start gap-2">
+                <div className="w-full max-w-[1200px] px-8 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-0">
+                    <div className="inline-flex flex-col justify-start items-center md:items-start gap-2 text-center md:text-left">
                         <div className="justify-center text-gray-950 text-2xl font-semibold font-['Liberation_Sans'] leading-8">DevPortfolio</div>
                         <div className="justify-center text-zinc-700 text-base font-normal font-['Pretendard'] leading-6">© 2026 Precision Engineering. Crafted for high-performance scale.</div>
                     </div>
 
-                    <div className="flex justify-start items-start gap-6">
+                    <div className="flex flex-col sm:flex-row justify-start items-center gap-6">
                         {/* 이메일 링크 */}
                         <a
                             href={`mailto:${contact.email}`}
